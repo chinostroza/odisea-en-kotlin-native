@@ -8,11 +8,18 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 * Kotlin/Native es una tecnología para compilar  
   código Kotlin a binarios nativos.  
   
-  1. Es un [LLVM](https://llvm.org/)  backend para el compilador de Kotlin  
-  2. Una nativa implementación de la librería estandar de Kotlin
+  1. [LLVM](https://llvm.org/) backend para el compilador de Kotlin  
+  2. Nativa implementación de la librería estandar de Kotlin
   
-* LLVM es una colección de compiladores y toolchain
+* ¿ Que es LLVM ?
+  Para entender LLVM, tenemos que entender la clásica implementación de un compilador
+  
+  <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/1.png" /> 
 
-* Compilador
-
-| Source | -----> | Machine Code |
+* 3 principales componentes  
+  1. Frontend: Encargado de construir el Abstract Syntax Tree (AST),  
+     para representar nuestro código fuente.
+  2. Optimizer: Intenta mejorar el tiempo de ejecución del código.
+  3. Backend o generador de código: Genera el código de maquina.
+  
+* Implicaciones de este diseño

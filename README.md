@@ -1,4 +1,4 @@
-# odisea-en-kotlin-native
+# Odisea en Kotlin Native
 Introducción a Kotlin Native y ejemplo de Interoperabilidad con la librería magick wand, escrita en C, para hacer comparación de screenshots
 
 Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/

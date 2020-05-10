@@ -48,7 +48,7 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 * .ll file
 
-```kotlin
+```ll
 define i32 @add1(i32 %a, i32 %b) {
 entry:
   %tmp1 = add i32 %a, %b
@@ -72,7 +72,7 @@ done:
 ```
 * C code
 
-```kotlin
+```c
 unsigned add1(unsigned a, unsigned b) {
   return a+b;
 }

@@ -11,18 +11,20 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
   1. [LLVM](https://llvm.org/) backend para el compilador de Kotlin  
   2. Nativa implementación de la librería estandar de Kotlin
   
-* ¿ Que es LLVM ?
+## 1. ¿ Que es LLVM ?
+
   Para entender LLVM, tenemos que entender la clásica implementación de un compilador
   
   <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/1.png" /> 
 
-* 3 principales componentes  
+### 1.1 3 principales componentes
+
   1. Frontend: Encargado de construir el Abstract Syntax Tree (AST),  
      para representar nuestro código fuente.
   2. Optimizer: Intenta mejorar el tiempo de ejecución del código.
   3. Backend o generador de código: Genera el código de maquina.
   
-* Ventajas de este diseño
+### 1.2 Ventajas de este diseño
 
   1. Cuando el compilador decide dar soporte a más de un lenguaje,   
   	es posible reutilizar el optimizador y arquitectura objetivo.
@@ -33,3 +35,51 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
   3. Personas con diferentes habilidades pueden colaborar en el proyecto.
     
   <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/2.png" />
+  
+### 1.3 Implementaciones exitosas
+
+	1. Java y .NET virtual machines
+    2. Trasladar la entrada a C code
+    3. GCC
+    
+### 1.4 LLVM's Code Representation: LLVM IR
+
+* El aspecto más importante del diseño de LLVM es ***Intermediate Representation (IR)***
+
+* .ll file
+
+```kotlin
+define i32 @add1(i32 %a, i32 %b) {
+entry:
+  %tmp1 = add i32 %a, %b
+  ret i32 %tmp1
+}
+
+define i32 @add2(i32 %a, i32 %b) {
+entry:
+  %tmp1 = icmp eq i32 %a, 0
+  br i1 %tmp1, label %done, label %recurse
+
+recurse:
+  %tmp2 = sub i32 %a, 1
+  %tmp3 = add i32 %b, 1
+  %tmp4 = call i32 @add2(i32 %tmp2, i32 %tmp3)
+  ret i32 %tmp4
+
+done:
+  ret i32 %b
+}
+```
+* C code
+
+```kotlin
+unsigned add1(unsigned a, unsigned b) {
+  return a+b;
+}
+
+// Perhaps not the most efficient way to add two numbers.
+unsigned add2(unsigned a, unsigned b) {
+  if (a == 0) return b;
+  return add2(a-1, b+1);
+}
+```

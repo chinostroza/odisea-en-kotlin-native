@@ -36,7 +36,10 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
     
   <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/2.png" />
   
-### 1.3 Implementaciones exitosas
+### 1.3 Implementaciones exitosas 
+
+//TODO falta agregar los problemas de estas implementaciones
+// y dar la entrada al por que de LLVM
 
 	1. Java y .NET virtual machines
     2. Trasladar la entrada a C code
@@ -83,3 +86,18 @@ unsigned add2(unsigned a, unsigned b) {
   return add2(a-1, b+1);
 }
 ```
+
+### 1.5 Usando Kotlin Native
+
+1. Lo primero es crear un proyecto del tipo Kotlin Native en IntelliJ
+
+2. Compilamos el código
+
+3. ./build/bin/macos/releaseExecutable/odisea-kotlin-native.kexe
+
+4. y deberiamos ver por consola *Hello, Kotlin/Native!*
+
+5. la idea de la charla es poder ver como es la interoperabilidad con C
+
+6. Para esto vamos a integrar de la librería MagickWand  
+   del proyecto [https://imagemagick.org/](https://imagemagick.org/) 

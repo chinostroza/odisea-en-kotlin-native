@@ -101,3 +101,14 @@ unsigned add2(unsigned a, unsigned b) {
 
 6. Para esto vamos a integrar de la librería MagickWand  
    del proyecto [https://imagemagick.org/](https://imagemagick.org/) 
+
+7. Crear un archivo de definición, en la siguiente ruta ../nativeInterop/cinterop/Magickwand.def
+
+8. Agregamos las siguientes definiciones
+
+```def
+headers = MagickWand/MagickWand.h
+headerFilter = MagickWand/*
+compilerOpts.osx = -Xpreprocessor -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -Xpreprocessor -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/local/Cellar/imagemagick/7.0.10-0/include/ImageMagick-7
+linkerOpts.osx = -L/usr/local/Cellar/imagemagick/7.0.10-0/lib -lMagickWand-7.Q16HDRI -lMagickCore-7.Q16HDRI
+```

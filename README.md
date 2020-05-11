@@ -104,7 +104,11 @@ unsigned add2(unsigned a, unsigned b) {
 
 7. Crear un archivo de definición, en la siguiente ruta ../nativeInterop/cinterop/Magickwand.def
 
-8. Agregamos las siguientes definiciones
+8. Agregamos las siguientes definiciones, obtenidas del siguiente comando
+
+```sh
+pkg-config --cflags --libs MagickWand
+```
 
 ```def
 headers = MagickWand/MagickWand.h

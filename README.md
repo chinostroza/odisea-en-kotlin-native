@@ -117,7 +117,7 @@ compilerOpts.osx = -Xpreprocessor -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCO
 linkerOpts.osx = -L/usr/local/Cellar/imagemagick/7.0.10-0/lib -lMagickWand-7.Q16HDRI -lMagickCore-7.Q16HDRI
 ```
 
-9. Agregamos la configuración para el target objetivo , nuestro caso 'macos' ../build.gradle
+9. Agregamos la configuración para el target objetivo , nuestro caso 'macos' en ../build.gradle
 
 ```groovy
 
@@ -139,5 +139,5 @@ kotlin {
                 }
             }
         }
-	...
+...
 ```

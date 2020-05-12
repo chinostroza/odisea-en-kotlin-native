@@ -116,3 +116,28 @@ headerFilter = MagickWand/*
 compilerOpts.osx = -Xpreprocessor -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -Xpreprocessor -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/local/Cellar/imagemagick/7.0.10-0/include/ImageMagick-7
 linkerOpts.osx = -L/usr/local/Cellar/imagemagick/7.0.10-0/lib -lMagickWand-7.Q16HDRI -lMagickCore-7.Q16HDRI
 ```
+
+9. Agregamos las siguientes opciones para la compilación nuestro querido ../build.gradle
+
+```groovy
+
+...
+
+kotlin {
+    // For ARM, should be changed to iosArm32 or iosArm64
+    // For Linux, should be changed to e.g. linuxX64
+    // For MacOS, should be changed to e.g. macosX64
+    // For Windows, should be changed to e.g. mingwX64
+    macosX64("macos") {
+        compilations.main {
+            cinterops {
+                Magickwand {
+                    defFile project.file("src/nativeInterop/cinterop/Magickwand.def")
+                    packageName 'sample'
+                    compilerOpts '-I/path'
+                    includeDirs.allHeaders("path")
+                }
+            }
+        }
+	...
+```

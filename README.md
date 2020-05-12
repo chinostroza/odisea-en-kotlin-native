@@ -104,7 +104,7 @@ unsigned add2(unsigned a, unsigned b) {
 
 7. Crear un archivo de definición, en la siguiente ruta ../nativeInterop/cinterop/Magickwand.def
 
-8. Agregamos las siguientes definiciones, obtenidas del siguiente comando
+8. Agregamos las siguientes opciones de compilación, obtenidas del siguiente comando
 
 ```sh
 pkg-config --cflags --libs MagickWand
@@ -117,7 +117,7 @@ compilerOpts.osx = -Xpreprocessor -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCO
 linkerOpts.osx = -L/usr/local/Cellar/imagemagick/7.0.10-0/lib -lMagickWand-7.Q16HDRI -lMagickCore-7.Q16HDRI
 ```
 
-9. Agregamos las siguientes opciones para la compilación nuestro querido ../build.gradle
+9. Agregamos la configuración para el target objetivo , nuestro caso 'macos' ../build.gradle
 
 ```groovy
 

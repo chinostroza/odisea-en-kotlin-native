@@ -142,4 +142,6 @@ kotlin {
 ...
 ```
 
-10. Procedemos a hacer el build del proyecto, para poder acceder los headers del proyecto a través de kotlin
+10. Procedemos a hacer el build del proyecto, para poder acceder los headers de MagickWand a través de kotlin
+
+* Si no agrega las dependencias , procedemos a reimport el proyecto gradle

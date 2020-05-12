@@ -141,3 +141,5 @@ kotlin {
         }
 ...
 ```
+
+10. Procedemos a hacer el build del proyecto, para poder acceder los headers del proyecto a través de kotlin

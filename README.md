@@ -8,6 +8,10 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 * según [wikipedia](https://es.wikipedia.org/wiki/Interoperabilidad) : El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) define interoperabilidad como la habilidad de dos o más sistemas o componentes para intercambiar información y utilizar la información intercambiada
 
+* El problema
+
+<img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/3.png" /> 
+
 # Kotlin native
 
 * Kotlin/Native es una tecnología para compilar  

@@ -222,4 +222,25 @@ fun main(args: Array<String>) {
 }
 ```
 
+13. Acá quiere detenerme un poco,
 
+```c
+	MagickWand *img1 = NULL,*img2 = NULL,*m_wand = NULL;
+	...
+	m_wand = MagickCompareImages(img1,img2,PeakSignalToNoiseRatioMetric,&distortion);
+	...
+```
+
+```kotlin
+	val distortion = alloc<DoubleVar>()
+        val alpha: CPointer<MagickWand>? = NewMagickWand()
+        val beta: CPointer<MagickWand>? = NewMagickWand()
+	...
+	val result = MagickCompareImages(
+            alpha,
+            beta,
+            MetricType.MeanSquaredErrorMetric,
+            distortion.ptr
+        )
+	...
+```

@@ -179,7 +179,7 @@ void test_wand(void)
 }
 ```
 
-* En kotlin
+* Kotlin
     
 ```kotlin
 package sample
@@ -222,7 +222,9 @@ fun main(args: Array<String>) {
 }
 ```
 
-13. Acá quiere detenerme un poco,
+13. Acá quiero detenerme un poco,
+
+* C
 
 ```c
 	MagickWand *img1 = NULL,*img2 = NULL,*m_wand = NULL;
@@ -230,6 +232,7 @@ fun main(args: Array<String>) {
 	m_wand = MagickCompareImages(img1,img2,PeakSignalToNoiseRatioMetric,&distortion);
 	...
 ```
+* Kotlin
 
 ```kotlin
 	val distortion = alloc<DoubleVar>()

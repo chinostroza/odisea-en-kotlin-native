@@ -8,13 +8,21 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 * según [wikipedia](https://es.wikipedia.org/wiki/Interoperabilidad) : El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) define interoperabilidad como la habilidad de dos o más sistemas o componentes para intercambiar información y utilizar la información intercambiada
 
-* El problema
+## La pega
+
+
+
 
 Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos usan esto :)
 
 Se ve entretenido va ...
 
 <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/3.png" /> 
+
+
+
+
+## Problemas :
 
  1. Osirix escrito en Objective C y por un médico
  2. Tesis PostDoctoral escrita en Python
@@ -25,7 +33,10 @@ Se ve entretenido va ...
     * Métodos de elementos finitos, para cuantificación de estructuras en 3 dimensiones.
     * Y muchossss algoritmos escritos en Python
     
- 5. El proceso consistía en algo así como un Pipeline :
+    
+    
+    
+ ## El proceso :
      
      1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador
         me pasaron un paper, lo implementé en -> Objective C (me demoré bastante)
@@ -46,6 +57,9 @@ Se ve entretenido va ...
      * No van aprender Objective C, C++, C , saldría muy caro 
      
      
+ ## Solución : 
+     
+     
      mmmm Eureka, todos saben Python
      
      PyObject :)
@@ -56,7 +70,7 @@ Se ve entretenido va ...
      
      ahora todos los científicos pueden interactuar con Osirix, en Python :)
      
-     Adios me largo :)
+     ***Adios me largo :)***
      
 # Kotlin native
 

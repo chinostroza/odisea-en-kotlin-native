@@ -24,7 +24,7 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
   Para entender LLVM, tenemos que entender la clásica implementación de un compilador
   
-  <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/1.png" /> 
+  <img width=640 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/1.png" /> 
 
 ### 1.1 3 principales componentes
 

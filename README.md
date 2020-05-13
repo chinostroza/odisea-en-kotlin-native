@@ -330,6 +330,7 @@ fun main(args: Array<String>) {
 Para la [comunidad android](https://www.facebook.com/gdgandroidsantiago/) , gracias a todos :)
 https://www.meetup.com/gdg-santiago-chile/
 
+<img width=800 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/4.png" /> 
 
 
 

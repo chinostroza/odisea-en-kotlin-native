@@ -15,7 +15,7 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos usan esto :)
 
-Se ve entretenido va ...
+Se ve entretenido va ...  ( veo un riesgo, hay una manzana en la foto mmm , ya pero filo )
 
 <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/3.png" /> 
 

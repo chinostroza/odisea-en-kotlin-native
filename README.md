@@ -13,7 +13,7 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 
 
-Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos usan esto :)
+Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos usan esto (todos tienen mac) :)
 
 Se ve entretenido va ...  ( veo un riesgo, hay una manzana en la foto mmm , ya pero filo )
 

@@ -38,12 +38,17 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
   
 ### 1.3 Implementaciones exitosas 
 
-//TODO falta agregar los problemas de estas implementaciones
-// y dar la entrada al por que de LLVM
-
-	1. Java y .NET virtual machines
+    1. Java y .NET virtual machines
     2. Trasladar la entrada a C code
     3. GCC
+    
+    y los problemas :
+    
+    1. Mala performace cuando hay interoperabilidad con otros lenguajes que no tienen su modelo, como C
+    2. Mala experiencia de degugging , compilación lenta, problemas con caracteristicas no soportadas por C
+    3. Gcc es Monolítico, no se puede usar como JIT compiler, no se pueden reusar piezas de este, no es modular 
+    
+    
     
 ### 1.4 LLVM's Code Representation: LLVM IR
 

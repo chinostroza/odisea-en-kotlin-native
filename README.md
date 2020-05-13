@@ -38,7 +38,7 @@ Se ve entretenido va ...
     
  ## El proceso :
      
-     1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador
+     1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador (40 min dentro del resonador, Yo)
         me pasaron un paper, lo implementé en -> Objective C (me demoré bastante)
      2. Generar un malla en 3D de la aorta -> C++ , me robé un generador de mallas de un proyecto open source
      3. Suavizar la malla -> C++, me lo robé del mismo programa

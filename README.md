@@ -327,6 +327,6 @@ fun main(args: Array<String>) {
 	...
 ```
 
-Para la comunidad android , gracias a todos :)
+Para la [comunidad android](https://www.facebook.com/gdgandroidsantiago/) , gracias a todos :)
 
 

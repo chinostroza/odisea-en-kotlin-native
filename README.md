@@ -328,5 +328,8 @@ fun main(args: Array<String>) {
 ```
 
 Para la [comunidad android](https://www.facebook.com/gdgandroidsantiago/) , gracias a todos :)
+https://www.meetup.com/gdg-santiago-chile/
+
+
 
 

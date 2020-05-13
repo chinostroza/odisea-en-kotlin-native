@@ -29,7 +29,7 @@ Se ve entretenido va ...
      
      1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador
         me pasaron un paper, lo implementé en -> Objective C (me demoré bastante)
-     2. Generar un malla en 3D del de la aorta -> C++ , me robé un generador de mallas de un proyecto open source
+     2. Generar un malla en 3D de la aorta -> C++ , me robé un generador de mallas de un proyecto open source
      3. Suavizar la malla -> C++, me lo robé del mismo programa
      4. Aplicar algoritmos de métodos fínitos de la tesis -> C++
      5. Lectura de los datos generados -> C  (velocidad)

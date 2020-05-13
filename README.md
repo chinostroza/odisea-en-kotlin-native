@@ -13,7 +13,7 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 
 
-Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos usan esto (todos tienen mac) :)
+Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos($$$) usan esto bla bla (todos tienen mac)
 
 Se ve entretenido va ...  ( veo un riesgo, hay una manzana en la foto mmm , ya pero filo )
 
@@ -41,7 +41,7 @@ Se ve entretenido va ...  ( veo un riesgo, hay una manzana en la foto mmm , ya p
      
      1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador (40 min dentro del resonador, Yo)
         me pasaron un paper, lo implementé en -> Objective C (me demoré bastante)
-     2. Generar un malla en 3D de la aorta -> C++ , me robé un generador de mallas de un proyecto open source
+     2. Generar un malla en 3D de la aorta -> C++ , me robé un generador de mallas de un proyecto open source (para médicos pobres y me salvo la vida)
      3. Suavizar la malla -> C++, me lo robé del mismo programa
      4. Aplicar algoritmos de métodos fínitos de la tesis -> C++
      5. Lectura de los datos generados -> C  (velocidad)

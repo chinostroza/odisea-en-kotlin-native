@@ -145,3 +145,5 @@ kotlin {
 10. Procedemos a hacer el build del proyecto, para poder acceder los headers de MagickWand a través de kotlin
 
 * Si no agrega las dependencias , procedemos a reimport el proyecto gradle
+
+12. Procedemos a escribir nuestra aplicación, la idea es poder comparar 2 imágenes o ScreenShots

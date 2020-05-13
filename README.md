@@ -16,7 +16,7 @@ Se ve entretenido va ...
 
 <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/3.png" /> 
 
- 1. Osirix escrito en Objective C
+ 1. Osirix escrito en Objective C y por un médico
  2. Tesis PostDoctoral escrita en Python
  3. No se Objective C
  4. Y no tengo un POSTDOC, en: 

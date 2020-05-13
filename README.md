@@ -146,4 +146,46 @@ kotlin {
 
 * Si no agrega las dependencias , procedemos a reimport el proyecto gradle
 
-12. Procedemos a escribir nuestra aplicación, la idea es poder comparar 2 imágenes o ScreenShots
+12. Procedemos a escribir nuestra aplicación, la idea es poder comparar 2 imágenes o ScreenShots </br>
+    para esto creamos el siguiente archivo por ejemplo SampleMacos.kt
+    
+```kotlin
+package sample
+
+import kotlinx.cinterop.*
+
+fun hello(): String = "Hello, Kotlin/Native! and MagickWand :)"
+
+fun main(args: Array<String>) {
+
+    memScoped {
+
+        //comenzando con el uso de magickwand
+        MagickWandGenesis()
+
+        val distortion = alloc<DoubleVar>()
+        val alpha: CPointer<MagickWand>? = NewMagickWand()
+        val beta: CPointer<MagickWand>? = NewMagickWand()
+
+        MagickReadImage(alpha, args[0])
+        MagickReadImage(beta, args[1])
+
+        val result = MagickCompareImages(
+            alpha,
+            beta,
+            MetricType.MeanSquaredErrorMetric,
+            distortion.ptr
+        )
+
+        println(distortion.value.toDouble())
+        MagickWriteImage(result, "result.jpg")
+        DestroyMagickWand(result);
+        DestroyMagickWand(alpha);
+        DestroyMagickWand(beta);
+        MagickWandTerminus();
+
+        println(hello())
+
+    }
+}
+```

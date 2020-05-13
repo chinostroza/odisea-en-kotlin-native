@@ -327,4 +327,6 @@ fun main(args: Array<String>) {
 	...
 ```
 
-Y eso PREGUNTAS ??
+Para la comunidad android , gracias a todos :)
+
+

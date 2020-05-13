@@ -147,7 +147,39 @@ kotlin {
 * Si no agrega las dependencias , procedemos a reimport el proyecto gradle
 
 12. Procedemos a escribir nuestra aplicación, la idea es poder comparar 2 imágenes o ScreenShots </br>
-    para esto creamos el siguiente archivo por ejemplo SampleMacos.kt
+    para esto creamos el siguiente archivo por ejemplo SampleMacos.kt`
+    
+* Acá tenemos un ejemplo en C
+
+```c
+#include <windows.h>
+#include <wand/magick_wand.h>
+
+void test_wand(void)
+{
+	MagickWand *img1 = NULL,*img2 = NULL,*m_wand = NULL;
+	double distortion = 0.0;
+	char info[128];
+
+	MagickWandGenesis();
+	img1 = NewMagickWand();
+	img2 = NewMagickWand();
+	MagickReadImage(img1, "rose.jpg");
+	MagickReadImage(img2,"reconstruct.jpg");
+	m_wand = MagickCompareImages(img1,img2,PeakSignalToNoiseRatioMetric,&distortion);
+
+	sprintf(info,"%12.4f",distortion);
+	MessageBox(NULL,info,"",MB_OK);
+
+	/* Tidy up */
+	m_wand = DestroyMagickWand(m_wand);
+	img1 = DestroyMagickWand(img1);
+	img2 = DestroyMagickWand(img2);
+	MagickWandTerminus();
+}
+```
+
+* En kotlin
     
 ```kotlin
 package sample
@@ -189,3 +221,5 @@ fun main(args: Array<String>) {
     }
 }
 ```
+
+

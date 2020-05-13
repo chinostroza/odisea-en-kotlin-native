@@ -10,8 +10,49 @@ Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 * El problema
 
+Traspasar una tesis PostDoctoral , como plugin en Osirix, por que los médicos usan esto :)
+
+Se ve entretenido va ...
+
 <img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/3.png" /> 
 
+ 1. Osirix escrito en Objective C
+ 2. Tesis PostDoctoral escrita en Python
+ 3. No se Objective C
+ 4. Y no tengo un POSTDOC, en: 
+    * Resonancia Magnetica
+    * Procesamiento avanzado de imágenes Volumétricas
+    * Metodos de elementos finitos, para cuantificación de estructuras en 3 dimensiones.
+    * Y muchossss algoritmos escritos en Python
+    
+ 5. El proceso consistía en algo así como un Pipeline :
+     
+     1. Algoritmo , para extrar la orta de una imagen 4D Flow, que sale de un resonador
+        me pasaron un paper, lo implemente en -> Objective C (me demore bastante)
+     2. Generar un malla en 3D del de la orta -> C++ , me robe un generador de mallas de un proyecto open source
+     3. Suavizar la malla -> C++, me lo robe del mismo programa
+     4. Aplicar algoritmos de métodos fínitos de la tesis -> C++
+     5. Lectura de los datos generados -> C  (velocidad)
+     6. Calculo de vector de velocidad, y medir velocidad de la sangre -> C++
+     
+     * Funciono , dentro de OsiriX , ahora todos los médicos lo pueden usar.... error eso va a pasar en 20 años más.
+     * Por ahora necesitamos que le expliques a todo el equipo como reutilizar los componentes :(
+     * Eso no va a pasar por que :
+     * No van aprender Objective C, C++, C , saldría muy caro 
+     
+     
+     mmmm Eureka, todos saben Python
+     
+     PyObject :)
+     
+     Solución:
+     
+     Osirix  -> plugin Osirix -> Librería para 4D Flow  ->  PyObject (interoperabilidad con C y C++) -> Python (Científicos) 
+     
+     ahora todos los científicos pueden interactuar con Osirix, en Python :)
+     
+     Adios me largo :)
+     
 # Kotlin native
 
 * Kotlin/Native es una tecnología para compilar  

@@ -21,6 +21,7 @@ Se ve entretenido va ...  ( veo un riesgo, hay una manzana en la foto mmm , ya p
 
 
 
+**Grave error la manzana era el problema fuck**
 
 ## Problemas :
 

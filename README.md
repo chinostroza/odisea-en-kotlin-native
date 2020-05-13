@@ -18,26 +18,31 @@ Se ve entretenido va ...
 
  1. Osirix escrito en Objective C y por un médico
  2. Tesis PostDoctoral escrita en Python
- 3. No se Objective C
+ 3. No sé Objective C :(
  4. Y no tengo un POSTDOC, en: 
-    * Resonancia Magnetica
+    * Resonancia Magnética
     * Procesamiento avanzado de imágenes Volumétricas
-    * Metodos de elementos finitos, para cuantificación de estructuras en 3 dimensiones.
+    * Métodos de elementos finitos, para cuantificación de estructuras en 3 dimensiones.
     * Y muchossss algoritmos escritos en Python
     
  5. El proceso consistía en algo así como un Pipeline :
      
-     1. Algoritmo , para extrar la orta de una imagen 4D Flow, que sale de un resonador
-        me pasaron un paper, lo implemente en -> Objective C (me demore bastante)
-     2. Generar un malla en 3D del de la orta -> C++ , me robe un generador de mallas de un proyecto open source
-     3. Suavizar la malla -> C++, me lo robe del mismo programa
+     1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador
+        me pasaron un paper, lo implementé en -> Objective C (me demoré bastante)
+     2. Generar un malla en 3D del de la aorta -> C++ , me robé un generador de mallas de un proyecto open source
+     3. Suavizar la malla -> C++, me lo robé del mismo programa
      4. Aplicar algoritmos de métodos fínitos de la tesis -> C++
      5. Lectura de los datos generados -> C  (velocidad)
-     6. Calculo de vector de velocidad, y medir velocidad de la sangre -> C++
+     6. Cálculo de los vectores de velocidad, del flujo sanguíneo -> C++
      
-     * Funciono , dentro de OsiriX , ahora todos los médicos lo pueden usar.... error eso va a pasar en 20 años más.
+     * Funcionó , dentro de OsiriX , ahora todos los médicos lo pueden usar.... error eso va a pasar en 20 años más... :(
+     
+     
      * Por ahora necesitamos que le expliques a todo el equipo como reutilizar los componentes :(
-     * Eso no va a pasar por que :
+     
+     
+     * Eso no va a pasar porque :
+     
      * No van aprender Objective C, C++, C , saldría muy caro 
      
      
@@ -95,8 +100,8 @@ Se ve entretenido va ...
     y los problemas :
     
     1. Mala performace cuando hay interoperabilidad con otros lenguajes que no tienen su modelo, como C
-    2. Mala experiencia de degugging , compilación lenta, problemas con caracteristicas no soportadas por C
-    3. Gcc es Monolítico, no se puede usar como JIT compiler, no se pueden reusar piezas de este, no es modular 
+    2. Mala experiencia de debugging , compilación lenta, problemas con características no soportadas por C
+    3. Gcc es Monolítico, no se pueden reutilizar piezas de éste, no es modular 
     
     
     
@@ -159,7 +164,7 @@ unsigned add2(unsigned a, unsigned b) {
 
 7. Crear un archivo de definición, en la siguiente ruta ../nativeInterop/cinterop/Magickwand.def
 
-8. Agregamos las siguientes opciones de compilación, obtenidas del siguiente comando
+8. Agregamos las siguientes opciones de compilación, obtenidas del siguiente comando:
 
 ```sh
 pkg-config --cflags --libs MagickWand
@@ -302,3 +307,5 @@ fun main(args: Array<String>) {
         )
 	...
 ```
+
+Y eso PREGUNTAS ??

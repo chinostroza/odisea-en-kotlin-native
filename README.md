@@ -3,10 +3,12 @@ Introducción a Kotlin Native y ejemplo de Interoperabilidad con la librería ma
 
 Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
-Carlos Hinostroza
-Desarrollador de Software en Mobdev
+Carlos Hinostroza</br>
+Arquitecto de Software en Mobdev
+<img src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/5.png" /> 
 
-
+Estamos buscando desarrolladores :)
+chinostroza@mobdev.cl
 
 
 # La importancia de la interoperabilidad

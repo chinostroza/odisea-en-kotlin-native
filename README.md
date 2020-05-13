@@ -3,6 +3,11 @@ Introducción a Kotlin Native y ejemplo de Interoperabilidad con la librería ma
 
 Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
+
+# La importancia de la interoperabilidad
+
+* según wikipedia : El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) define interoperabilidad como la habilidad de dos o más sistemas o componentes para intercambiar información y utilizar la información intercambiada
+
 # Kotlin native
 
 * Kotlin/Native es una tecnología para compilar  

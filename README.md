@@ -4,7 +4,6 @@ Introducción a Kotlin Native y ejemplo de Interoperabilidad con la librería ma
 Charla remota , para https://www.meetup.com/gdg-santiago-chile/events/270466964/
 
 Carlos Hinostroza</br>
-Arquitecto de Software en Mobdev</br>
 <img width=100 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/5.png" /> 
 
 Estamos buscando desarrolladores :)

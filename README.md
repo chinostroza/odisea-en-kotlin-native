@@ -10,54 +10,25 @@ Carlos Hinostroza</br>
 
 * según [wikipedia](https://es.wikipedia.org/wiki/Interoperabilidad) : El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) define interoperabilidad como la habilidad de dos o más sistemas o componentes para intercambiar información y utilizar la información intercambiada
 
-## La pega
 
-
-
-
-Traspasar una tesis PostDoctoral , como plugin en Osirix, 
-
-**Por que:**
-
-los médicos($$$) usan esto bla bla (todos tienen mac)
-
-weno se ve entretenido va ...  ( mm veo un riesgo, hay una manzana en la foto mmm , ya pero filo )
-
-<img width=500 src="https://github.com/chinostroza/odisea-en-kotlin-native/raw/master/3.png" /> 
-
-
-
-**Grave error la manzana era el problema fuck**
 
 ## Problemas :
 
- 1. Osirix escrito en Objective C y por un médico
- 2. Tesis PostDoctoral escrita en Python
- 3. No sé Objective C :(
- 4. Y no tengo un POSTDOC, en: 
-    * Resonancia Magnética
-    * Procesamiento avanzado de imágenes Volumétricas
-    * Métodos de elementos finitos, para cuantificación de estructuras en 3 dimensiones.
-    * Y muchossss algoritmos escritos en Python
-    
-    
-    
+ 1. Osirix escrito en Objective C
+ 2. Modelos matemáticos en Python    
     
  ## El proceso :
      
-     1. Algoritmo , para extrar la aorta de una imagen 4D Flow, que sale de un resonador (40 min dentro del resonador, Yo)
-        me pasaron un paper, lo implementé en -> Objective C (me demoré bastante)
-     2. Generar un malla en 3D de la aorta -> C++ , me robé un generador de mallas de un proyecto open source (para médicos pobres y me salvo la vida)
-     3. Suavizar la malla -> C++, me lo robé del mismo programa
+     1. Algoritmo , para extrar la aorta de una imagen 4D Flow -> Objective C
+     2. Generar un malla en 3D de la aorta -> C++ 
+     3. Suavizar la malla -> C++
      4. Aplicar algoritmos de métodos fínitos de la tesis -> C++
      5. Lectura de los datos generados -> C  (velocidad)
      6. Cálculo de los vectores de velocidad, del flujo sanguíneo -> C++
      
-     * Funcionó , dentro de OsiriX , ahora todos los médicos lo pueden usar.... error eso va a pasar en 20 años más... :(
-     
+     * Funcionó , dentro de OsiriX ,
      
      * Por ahora necesitamos que le expliques a todo el equipo como reutilizar los componentes :(
-     
      
      * Eso no va a pasar porque :
      
@@ -67,7 +38,7 @@ weno se ve entretenido va ...  ( mm veo un riesgo, hay una manzana en la foto mm
  ## Solución : 
      
      
-     mmmm Eureka, todos saben Python
+     mmmm todos saben Python
      
      PyObject :)
      

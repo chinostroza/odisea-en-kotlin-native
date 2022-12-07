@@ -26,19 +26,13 @@ Carlos Hinostroza</br>
      5. Lectura de los datos generados -> C  (velocidad)
      6. Cálculo de los vectores de velocidad, del flujo sanguíneo -> C++
      
-     * Funcionó , dentro de OsiriX ,
+     * Problema de reutilización de librerias, ya que en ciencias se utiliza python
      
-     * Por ahora necesitamos que le expliques a todo el equipo como reutilizar los componentes :(
-     
-     * Eso no va a pasar porque :
-     
-     * No van aprender Objective C, C++, C , saldría muy caro 
+     * Tiempos asociados a curvas de aprendizaje de Objective C, C++, C , 
      
      
  ## Solución : 
-     
-     
-     mmmm todos saben Python
+
      
      PyObject :)
      
